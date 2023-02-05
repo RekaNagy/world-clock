@@ -1,0 +1,128 @@
+body {
+    background-color: #9ba6a5;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+  }
+  
+  h2 {
+    margin: 0 0 5px;
+    font-size: 26px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #aeccc6;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .city {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  }
+  
+  .city:last-child {
+    border: none;
+  }
+  
+  .date {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  
+  .time {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .time small {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 36px;
+  }
+  
+  .viewAllLink {
+    font-size: 16px;
+  }
+  
+  #selectCityLink {
+    font-size: 14px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 35px;
+  }
+  
+  
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 26px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0px;
+    }
+  
+    .container {
+      margin: 30px auto;
+      padding: 20px 10px 30px 10px;
+    }
+  
+    .city {
+      margin: 10px;
+      padding: 20px 0;
+    }
+  
+    select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .date {
+      font-size: 10px;
+    }
+  
+    .time {
+      font-size: 24px;
+    }
+  
+    .time small {
+      font-size: 16px;
+    }
+  
+    .viewAllLink {
+      font-size: 12px;
+    }
+  
+    #selectCityLink {
+      font-size: 10px;
+    }
+  
+    footer {
+      font-size: 8px;
+    }
+  }
+  

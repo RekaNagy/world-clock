@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Réka Nagy</title>
 </head>
 <body>
-    <footer>This project was coded by Réka Nagy and it is <a href="https://github.com/RekaNagy/world-clock" target="_blank"> open sourced on GitHub.</a> </footer>
+    <div class="container">
+        <h1>World Clock</h1>
+        <select name="city" id="selectCity">
+            <option value="">Select a location...</option>
+            <option value="current">My current location 📍</option>
+            <option value="Pacific/Pago_Pago">Pago Pago, American Samoa 🇦🇸 (GMT -11:00) </option>
+            <option value="Europe/Copenhagen">Copenhagen, Denmark 🇩🇰 (GMT +01:00) </option>
+            <option value="Pacific/Auckland">Auckland, New Zealand 🇳🇿 (GMT +13:00) </option>
+        </select>
+
+        <div id="city">
+            <div class="city" id="pago-pago">
+              <div>
+                <h2>Pago Pago 🇦🇸</h2>
+                <div class="date"></div>
+              </div>
+              <div class="time"></div>
+            </div>
+
+            <div class="city" id="copenhagen">
+                <div>
+                  <h2>Copenhagen 🇩🇰</h2>
+                  <div class="date"></div>
+                </div>
+                <div class="time"></div>
+              </div>
+
+              <div class="city" id="auckland">
+                <div>
+                  <h2>Auckland 🇳🇿</h2>
+                  <div class="date"></div>
+                </div>
+                <div class="time"></div>
+              </div>
+
+              <a href="#selectCity" id="selectCityLink"> Select a location </a>
+
+        </div>   
+    </div>
+    
+    <footer>
+        This project was coded by <strong>Réka Nagy</strong> and is  <a href="https://github.com/RekaNagy/world-clock" target="_blank"> open sourced on GitHub</a> .
+    </footer>
     <script src="javascript/index.js"></script>
 </body>
 </html>
